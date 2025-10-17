@@ -1,0 +1,45 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: streaming_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-streaming_app}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: streaming_backend
+    depends_on:
+      - postgres
+    environment:
+      PORT: ${PORT:-3000}
+      NODE_ENV: ${NODE_ENV:-development}
+      JWT_SECRET: ${JWT_SECRET:-change-this-secret}
+      DATABASE_URL: ${DATABASE_URL:-postgresql://postgres:postgres@postgres:5432/streaming_app?schema=public}
+      RTMP_PORT: ${RTMP_PORT:-1935}
+      RTMP_HTTP_PORT: ${RTMP_HTTP_PORT:-8000}
+      RTMP_APP_NAME: ${RTMP_APP_NAME:-live}
+      RTMP_MEDIA_ROOT: ${RTMP_MEDIA_ROOT:-./storage/media}
+      FFMPEG_PATH: ${FFMPEG_PATH:-/usr/bin/ffmpeg}
+    ports:
+      - "3000:3000"
+      - "1935:1935"
+      - "8000:8000"
+    volumes:
+      - ./backend/src:/usr/src/app/src
+      - ./backend/prisma:/usr/src/app/prisma
+      - ./backend/storage:/usr/src/app/storage
+    command: sh -c "npx prisma migrate deploy && npm run start"
+
+volumes:
+  postgres-data:
