@@ -1,0 +1,55 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String          @id @default(uuid())
+  username       String          @unique
+  email          String          @unique
+  password       String
+  role           String          @default("streamer")
+  streamKey      String          @unique @map("stream_key")
+  createdAt      DateTime        @default(now()) @map("created_at")
+  schedules      Schedule[]
+  streamSessions StreamSession[]
+
+  @@map("users")
+}
+
+model Schedule {
+  id           String          @id @default(uuid())
+  user         User            @relation(fields: [userId], references: [id])
+  userId       String          @map("user_id")
+  title        String
+  description  String?
+  youtubeUrl   String?         @map("youtube_url")
+  streamKey    String?         @map("stream_key")
+  scheduledAt  DateTime        @map("scheduled_at")
+  status       String          @default("scheduled")
+  streamSessions StreamSession[]
+  createdAt    DateTime        @default(now()) @map("created_at")
+  updatedAt    DateTime        @updatedAt @map("updated_at")
+
+  @@map("schedules")
+}
+
+model StreamSession {
+  id          String     @id @default(uuid())
+  user        User       @relation(fields: [userId], references: [id])
+  userId      String     @map("user_id")
+  schedule    Schedule?  @relation(fields: [scheduleId], references: [id])
+  scheduleId  String?    @map("schedule_id")
+  startedAt   DateTime?  @map("started_at")
+  endedAt     DateTime?  @map("ended_at")
+  status      String     @default("inactive")
+  viewerCount Int        @default(0) @map("viewer_count")
+  createdAt   DateTime   @default(now()) @map("created_at")
+  updatedAt   DateTime   @updatedAt @map("updated_at")
+
+  @@map("stream_sessions")
+}
