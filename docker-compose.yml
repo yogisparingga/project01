@@ -29,6 +29,7 @@ services:
       RTMP_PORT: ${RTMP_PORT:-1935}
       RTMP_HTTP_PORT: ${RTMP_HTTP_PORT:-8000}
       RTMP_APP_NAME: ${RTMP_APP_NAME:-live}
+      RTMP_MEDIA_ROOT: ${RTMP_MEDIA_ROOT:-./storage/media}
       FFMPEG_PATH: ${FFMPEG_PATH:-/usr/bin/ffmpeg}
     ports:
       - "3000:3000"
@@ -37,6 +38,7 @@ services:
     volumes:
       - ./backend/src:/usr/src/app/src
       - ./backend/prisma:/usr/src/app/prisma
+      - ./backend/storage:/usr/src/app/storage
     command: sh -c "npx prisma migrate deploy && npm run start"
 
 volumes:

@@ -1,7 +1,9 @@
 const path = require('path');
 const dotenv = require('dotenv');
 
-const defaultEnvPath = path.join(__dirname, '../../.env');
+const projectRoot = path.resolve(__dirname, '../../');
+const defaultEnvPath = path.join(projectRoot, '.env');
+const defaultMediaRoot = path.join(projectRoot, 'media');
 
 dotenv.config({ path: process.env.ENV_PATH || defaultEnvPath, override: false });
 
@@ -17,6 +19,14 @@ function describeMissingEnv(key, description) {
   }
 }
 
+function resolveMediaRoot(value) {
+  if (!value) {
+    return defaultMediaRoot;
+  }
+
+  return path.isAbsolute(value) ? value : path.resolve(projectRoot, value);
+}
+
 const config = {
   env: process.env.NODE_ENV || 'development',
   port: Number(process.env.PORT) || 3000,
@@ -26,6 +36,7 @@ const config = {
   rtmpHttpPort: Number(process.env.RTMP_HTTP_PORT) || 8000,
   ffmpegPath: process.env.FFMPEG_PATH || '/usr/bin/ffmpeg',
   streamAppName: process.env.RTMP_APP_NAME || 'live',
+  rtmpMediaRoot: resolveMediaRoot(process.env.RTMP_MEDIA_ROOT),
 };
 
 module.exports = config;

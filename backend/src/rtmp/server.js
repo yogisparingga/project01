@@ -1,3 +1,4 @@
+const fs = require('fs');
 const NodeMediaServer = require('node-media-server');
 const config = require('../config/env');
 const prisma = require('../lib/prisma');
@@ -15,7 +16,25 @@ async function validateStreamKey(streamKey) {
   return Boolean(user);
 }
 
+function ensureDirectoryExists(dirPath) {
+  if (!fs.existsSync(dirPath)) {
+    fs.mkdirSync(dirPath, { recursive: true });
+  }
+}
+
+function isFfmpegAvailable(ffmpegPath) {
+  try {
+    fs.accessSync(ffmpegPath, fs.constants.X_OK);
+    return true;
+  } catch (error) {
+    console.warn(`[rtmp] FFmpeg binary not accessible at ${ffmpegPath}. Transcoding features disabled.`);
+    return false;
+  }
+}
+
 function buildConfig() {
+  ensureDirectoryExists(config.rtmpMediaRoot);
+
   const baseConfig = {
     logType: 2,
     rtmp: {
@@ -28,13 +47,14 @@ function buildConfig() {
     http: {
       port: config.rtmpHttpPort,
       allow_origin: '*',
+      mediaroot: config.rtmpMediaRoot,
     },
     auth: {
       api: true,
     },
   };
 
-  if (config.ffmpegPath) {
+  if (config.ffmpegPath && isFfmpegAvailable(config.ffmpegPath)) {
     baseConfig.trans = {
       ffmpeg: config.ffmpegPath,
       tasks: [
