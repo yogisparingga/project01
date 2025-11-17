@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas Umum - Portal Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="database" class="w-8 h-8 text-blue-600"></i>
+                    <span class="text-xl font-bold text-gray-800">Portal Data</span>
+                </div>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="../index.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="home" class="w-4 h-4"></i>Beranda</a>
+                    <a href="layanan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="briefcase" class="w-4 h-4"></i>Layanan</a>
+                    <a href="pengumuman.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="megaphone" class="w-4 h-4"></i>Pengumuman</a>
+                    <a href="fasilitas.html" class="text-blue-600 font-semibold flex items-center gap-2"><i data-lucide="building" class="w-4 h-4"></i>Fasilitas Umum</a>
+                    <a href="cctv.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="camera" class="w-4 h-4"></i>CCTV</a>
+                    <a href="agenda.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4"></i>Agenda</a>
+                    <a href="data-sectoral.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="bar-chart" class="w-4 h-4"></i>Data Sektoral</a>
+                    <a href="dokumen.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="file-text" class="w-4 h-4"></i>Dokumen</a>
+                    <a href="pelaporan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="flag" class="w-4 h-4"></i>Pelaporan</a>
+                    <a href="kontak.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i>Kontak</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700"><i data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="../index.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="home" class="w-4 h-4"></i>Beranda</a>
+                    <a href="layanan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="briefcase" class="w-4 h-4"></i>Layanan</a>
+                    <a href="pengumuman.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="megaphone" class="w-4 h-4"></i>Pengumuman</a>
+                    <a href="fasilitas.html" class="text-blue-600 font-semibold flex items-center gap-2 py-2"><i data-lucide="building" class="w-4 h-4"></i>Fasilitas Umum</a>
+                    <a href="cctv.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="camera" class="w-4 h-4"></i>CCTV</a>
+                    <a href="agenda.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="calendar" class="w-4 h-4"></i>Agenda</a>
+                    <a href="data-sectoral.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="bar-chart" class="w-4 h-4"></i>Data Sektoral</a>
+                    <a href="dokumen.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="file-text" class="w-4 h-4"></i>Dokumen</a>
+                    <a href="pelaporan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="flag" class="w-4 h-4"></i>Pelaporan</a>
+                    <a href="kontak.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="phone" class="w-4 h-4"></i>Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-white border-b border-gray-200 py-4">
+        <div class="container mx-auto px-4">
+            <div class="breadcrumb">
+                <a href="../index.html" class="text-gray-600 hover:text-blue-600 flex items-center gap-1"><i data-lucide="home" class="w-4 h-4"></i>Beranda</a>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400"></i>
+                <span class="text-gray-800 font-medium">Fasilitas Umum</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-to-r from-purple-600 to-purple-800 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center gap-3 mb-4">
+                <i data-lucide="building" class="w-12 h-12 text-white"></i>
+                <h1 class="text-3xl md:text-4xl font-bold text-white">Fasilitas Umum</h1>
+            </div>
+            <p class="text-purple-100 text-lg max-w-2xl">Informasi lengkap tentang fasilitas umum yang tersedia</p>
+        </div>
+    </section>
+
+    <section class="py-6 bg-white border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+                <div class="search-box w-full md:w-96">
+                    <i data-lucide="search" class="search-icon w-5 h-5"></i>
+                    <input type="text" class="form-input search-input" placeholder="Cari fasilitas..." data-search-target=".fasilitas-item">
+                </div>
+                <div class="flex gap-2 flex-wrap">
+                    <button onclick="filterItems('all', '.fasilitas-item')" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700">Semua</button>
+                    <button onclick="filterItems('kesehatan', '.fasilitas-item')" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-300">Kesehatan</button>
+                    <button onclick="filterItems('pendidikan', '.fasilitas-item')" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-300">Pendidikan</button>
+                    <button onclick="filterItems('olahraga', '.fasilitas-item')" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-300">Olahraga</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="fasilitas-item bg-white rounded-lg shadow-sm hover:shadow-lg transition overflow-hidden" data-category="kesehatan">
+                    <div class="bg-red-100 p-8 flex items-center justify-center">
+                        <i data-lucide="hospital" class="w-16 h-16 text-red-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="badge badge-danger mb-3">Kesehatan</span>
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Puskesmas</h3>
+                        <p class="text-gray-600 mb-4">15 lokasi puskesmas tersebar di berbagai wilayah untuk melayani kesehatan masyarakat.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-gray-500 flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i>15 Lokasi</span>
+                            <span class="text-sm text-gray-500 flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4"></i>24 Jam</span>
+                        </div>
+                        <a href="fasilitas-detail.html?id=1" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                            Lihat Detail
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="fasilitas-item bg-white rounded-lg shadow-sm hover:shadow-lg transition overflow-hidden" data-category="pendidikan">
+                    <div class="bg-blue-100 p-8 flex items-center justify-center">
+                        <i data-lucide="school" class="w-16 h-16 text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="badge badge-primary mb-3">Pendidikan</span>
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Sekolah Negeri</h3>
+                        <p class="text-gray-600 mb-4">50 sekolah negeri dari tingkat SD hingga SMA tersedia untuk pendidikan berkualitas.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-gray-500 flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i>50 Lokasi</span>
+                            <span class="text-sm text-gray-500 flex items-center gap-1"><i data-lucide="users" class="w-4 h-4"></i>25,000 Siswa</span>
+                        </div>
+                        <a href="fasilitas-detail.html?id=2" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                            Lihat Detail
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="fasilitas-item bg-white rounded-lg shadow-sm hover:shadow-lg transition overflow-hidden" data-category="olahraga">
+                    <div class="bg-green-100 p-8 flex items-center justify-center">
+                        <i data-lucide="trees" class="w-16 h-16 text-green-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="badge badge-success mb-3">Olahraga & Rekreasi</span>
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Taman & Ruang Terbuka</h3>
+                        <p class="text-gray-600 mb-4">25 taman dan ruang terbuka hijau untuk aktivitas olahraga dan rekreasi keluarga.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-gray-500 flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i>25 Lokasi</span>
+                            <span class="text-sm text-gray-500 flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4"></i>06:00 - 22:00</span>
+                        </div>
+                        <a href="fasilitas-detail.html?id=3" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                            Lihat Detail
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="fasilitas-item bg-white rounded-lg shadow-sm hover:shadow-lg transition overflow-hidden" data-category="pendidikan">
+                    <div class="bg-purple-100 p-8 flex items-center justify-center">
+                        <i data-lucide="book-open" class="w-16 h-16 text-purple-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="badge badge-primary mb-3">Pendidikan</span>
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Perpustakaan Umum</h3>
+                        <p class="text-gray-600 mb-4">10 perpustakaan umum dengan koleksi buku lengkap dan fasilitas digital modern.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-gray-500 flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i>10 Lokasi</span>
+                            <span class="text-sm text-gray-500 flex items-center gap-1"><i data-lucide="book" class="w-4 h-4"></i>100K Koleksi</span>
+                        </div>
+                        <a href="fasilitas-detail.html?id=4" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                            Lihat Detail
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="fasilitas-item bg-white rounded-lg shadow-sm hover:shadow-lg transition overflow-hidden" data-category="olahraga">
+                    <div class="bg-orange-100 p-8 flex items-center justify-center">
+                        <i data-lucide="dumbbell" class="w-16 h-16 text-orange-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="badge badge-warning mb-3">Olahraga</span>
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Gelanggang Olahraga</h3>
+                        <p class="text-gray-600 mb-4">8 gedung olahraga untuk berbagai kegiatan seperti futsal, basket, dan badminton.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-gray-500 flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i>8 Lokasi</span>
+                            <span class="text-sm text-gray-500 flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4"></i>08:00 - 21:00</span>
+                        </div>
+                        <a href="fasilitas-detail.html?id=5" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                            Lihat Detail
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="fasilitas-item bg-white rounded-lg shadow-sm hover:shadow-lg transition overflow-hidden" data-category="kesehatan">
+                    <div class="bg-pink-100 p-8 flex items-center justify-center">
+                        <i data-lucide="heart-pulse" class="w-16 h-16 text-pink-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="badge badge-danger mb-3">Kesehatan</span>
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Rumah Sakit Umum</h3>
+                        <p class="text-gray-600 mb-4">5 rumah sakit umum dengan fasilitas lengkap dan tenaga medis profesional.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-gray-500 flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i>5 Lokasi</span>
+                            <span class="text-sm text-gray-500 flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4"></i>24 Jam</span>
+                        </div>
+                        <a href="fasilitas-detail.html?id=6" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                            Lihat Detail
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="database" class="w-6 h-6"></i>
+                        <h3 class="text-lg font-bold">Portal Data</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Platform informasi dan layanan publik yang transparan dan mudah diakses.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="layanan.html" class="text-gray-400 hover:text-white transition">Layanan</a></li>
+                        <li><a href="pengumuman.html" class="text-gray-400 hover:text-white transition">Pengumuman</a></li>
+                        <li><a href="data-sectoral.html" class="text-gray-400 hover:text-white transition">Data Sektoral</a></li>
+                        <li><a href="dokumen.html" class="text-gray-400 hover:text-white transition">Dokumen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Informasi</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="fasilitas.html" class="text-gray-400 hover:text-white transition">Fasilitas Umum</a></li>
+                        <li><a href="cctv.html" class="text-gray-400 hover:text-white transition">CCTV</a></li>
+                        <li><a href="agenda.html" class="text-gray-400 hover:text-white transition">Agenda</a></li>
+                        <li><a href="pelaporan.html" class="text-gray-400 hover:text-white transition">Pelaporan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Kontak</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-400">Jl. Contoh No. 123, Jakarta</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4 flex-shrink-0"></i>
+                            <span class="text-gray-400">(021) 1234-5678</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4 flex-shrink-0"></i>
+                            <span class="text-gray-400">info@portaldata.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Portal Data. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

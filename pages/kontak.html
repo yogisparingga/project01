@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Portal Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="database" class="w-8 h-8 text-blue-600"></i>
+                    <span class="text-xl font-bold text-gray-800">Portal Data</span>
+                </div>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="../index.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="home" class="w-4 h-4"></i>Beranda</a>
+                    <a href="layanan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="briefcase" class="w-4 h-4"></i>Layanan</a>
+                    <a href="pengumuman.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="megaphone" class="w-4 h-4"></i>Pengumuman</a>
+                    <a href="fasilitas.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="building" class="w-4 h-4"></i>Fasilitas Umum</a>
+                    <a href="cctv.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="camera" class="w-4 h-4"></i>CCTV</a>
+                    <a href="agenda.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4"></i>Agenda</a>
+                    <a href="data-sectoral.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="bar-chart" class="w-4 h-4"></i>Data Sektoral</a>
+                    <a href="dokumen.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="file-text" class="w-4 h-4"></i>Dokumen</a>
+                    <a href="pelaporan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="flag" class="w-4 h-4"></i>Pelaporan</a>
+                    <a href="kontak.html" class="text-blue-600 font-semibold flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i>Kontak</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700"><i data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="../index.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="home" class="w-4 h-4"></i>Beranda</a>
+                    <a href="layanan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="briefcase" class="w-4 h-4"></i>Layanan</a>
+                    <a href="pengumuman.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="megaphone" class="w-4 h-4"></i>Pengumuman</a>
+                    <a href="fasilitas.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="building" class="w-4 h-4"></i>Fasilitas Umum</a>
+                    <a href="cctv.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="camera" class="w-4 h-4"></i>CCTV</a>
+                    <a href="agenda.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="calendar" class="w-4 h-4"></i>Agenda</a>
+                    <a href="data-sectoral.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="bar-chart" class="w-4 h-4"></i>Data Sektoral</a>
+                    <a href="dokumen.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="file-text" class="w-4 h-4"></i>Dokumen</a>
+                    <a href="pelaporan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="flag" class="w-4 h-4"></i>Pelaporan</a>
+                    <a href="kontak.html" class="text-blue-600 font-semibold flex items-center gap-2 py-2"><i data-lucide="phone" class="w-4 h-4"></i>Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-white border-b border-gray-200 py-4">
+        <div class="container mx-auto px-4">
+            <div class="breadcrumb">
+                <a href="../index.html" class="text-gray-600 hover:text-blue-600 flex items-center gap-1"><i data-lucide="home" class="w-4 h-4"></i>Beranda</a>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400"></i>
+                <span class="text-gray-800 font-medium">Kontak & Bantuan</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center gap-3 mb-4">
+                <i data-lucide="phone" class="w-12 h-12 text-white"></i>
+                <h1 class="text-3xl md:text-4xl font-bold text-white">Kontak & Bantuan</h1>
+            </div>
+            <p class="text-blue-100 text-lg max-w-2xl">Hubungi kami untuk pertanyaan, bantuan, atau informasi lebih lanjut</p>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                        <i data-lucide="mail" class="w-6 h-6 text-blue-600"></i>
+                        Kirim Pesan
+                    </h2>
+                    
+                    <form class="space-y-6">
+                        <div class="form-group">
+                            <label class="form-label">Nama Lengkap *</label>
+                            <input type="text" class="form-input" placeholder="Masukkan nama lengkap" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email *</label>
+                            <input type="email" class="form-input" placeholder="email@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Nomor Telepon</label>
+                            <input type="tel" class="form-input" placeholder="08xx-xxxx-xxxx">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Subjek *</label>
+                            <input type="text" class="form-input" placeholder="Subjek pesan" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Pesan *</label>
+                            <textarea class="form-textarea" placeholder="Tulis pesan Anda..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <div class="bg-white rounded-lg shadow-lg p-8 mb-6">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-blue-600"></i>
+                            Informasi Kontak
+                        </h2>
+
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="map-pin" class="w-6 h-6 text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800 mb-1">Alamat</h3>
+                                    <p class="text-gray-600">Jl. Contoh Nomor 123<br>Jakarta Pusat, DKI Jakarta 10110</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="phone" class="w-6 h-6 text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800 mb-1">Telepon</h3>
+                                    <p class="text-gray-600">(021) 1234-5678<br>(021) 8765-4321</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="mail" class="w-6 h-6 text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800 mb-1">Email</h3>
+                                    <p class="text-gray-600">info@portaldata.id<br>support@portaldata.id</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="clock" class="w-6 h-6 text-orange-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800 mb-1">Jam Operasional</h3>
+                                    <p class="text-gray-600">Senin - Jumat: 08:00 - 16:00 WIB<br>Sabtu: 08:00 - 12:00 WIB<br>Minggu & Hari Libur: Tutup</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h2 class="text-xl font-bold text-gray-800 mb-4">Ikuti Kami</h2>
+                        <div class="flex gap-3">
+                            <a href="#" class="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
+                                <i data-lucide="facebook" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-sky-500 text-white rounded-lg flex items-center justify-center hover:bg-sky-600 transition">
+                                <i data-lucide="twitter" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-pink-600 text-white rounded-lg flex items-center justify-center hover:bg-pink-700 transition">
+                                <i data-lucide="instagram" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-red-600 text-white rounded-lg flex items-center justify-center hover:bg-red-700 transition">
+                                <i data-lucide="youtube" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                    <i data-lucide="help-circle" class="w-6 h-6 text-blue-600"></i>
+                    Frequently Asked Questions (FAQ)
+                </h2>
+
+                <div class="space-y-4">
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <h3 class="font-semibold text-gray-800 mb-2 flex items-center gap-2">
+                            <i data-lucide="chevron-right" class="w-5 h-5 text-blue-600"></i>
+                            Bagaimana cara mengakses layanan e-perizinan?
+                        </h3>
+                        <p class="text-gray-600 ml-7">Anda dapat mengakses layanan e-perizinan melalui menu Layanan di website ini. Daftarkan akun terlebih dahulu menggunakan email aktif, kemudian ikuti alur pengajuan yang tersedia.</p>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <h3 class="font-semibold text-gray-800 mb-2 flex items-center gap-2">
+                            <i data-lucide="chevron-right" class="w-5 h-5 text-blue-600"></i>
+                            Berapa lama proses verifikasi izin?
+                        </h3>
+                        <p class="text-gray-600 ml-7">Proses verifikasi umumnya memakan waktu 1-3 hari kerja. Anda akan mendapatkan notifikasi via email untuk setiap update status permohonan Anda.</p>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <h3 class="font-semibold text-gray-800 mb-2 flex items-center gap-2">
+                            <i data-lucide="chevron-right" class="w-5 h-5 text-blue-600"></i>
+                            Bagaimana cara mengunduh data sektoral?
+                        </h3>
+                        <p class="text-gray-600 ml-7">Buka halaman Data Sektoral, pilih data yang Anda butuhkan, kemudian klik tombol Download. Data tersedia dalam format PDF, Excel, atau CSV.</p>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <h3 class="font-semibold text-gray-800 mb-2 flex items-center gap-2">
+                            <i data-lucide="chevron-right" class="w-5 h-5 text-blue-600"></i>
+                            Apakah semua layanan gratis?
+                        </h3>
+                        <p class="text-gray-600 ml-7">Ya, semua layanan informasi dan akses data di portal ini gratis. Beberapa layanan perizinan mungkin dikenakan biaya retribusi sesuai peraturan yang berlaku.</p>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <h3 class="font-semibold text-gray-800 mb-2 flex items-center gap-2">
+                            <i data-lucide="chevron-right" class="w-5 h-5 text-blue-600"></i>
+                            Siapa yang bisa saya hubungi jika ada masalah teknis?
+                        </h3>
+                        <p class="text-gray-600 ml-7">Untuk bantuan teknis, Anda dapat menghubungi kami melalui email support@portaldata.id atau telepon (021) 1234-5678 pada jam operasional.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="mt-12 bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                        <i data-lucide="map" class="w-6 h-6 text-blue-600"></i>
+                        Lokasi Kami
+                    </h2>
+                </div>
+                <div class="bg-gray-300 h-96 flex items-center justify-center">
+                    <div class="text-center text-gray-600">
+                        <i data-lucide="map-pin" class="w-16 h-16 mx-auto mb-4 text-gray-400"></i>
+                        <p class="text-lg font-medium">Map Placeholder</p>
+                        <p class="text-sm">Jl. Contoh Nomor 123, Jakarta Pusat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="database" class="w-6 h-6"></i>
+                        <h3 class="text-lg font-bold">Portal Data</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Platform informasi dan layanan publik yang transparan dan mudah diakses.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="layanan.html" class="text-gray-400 hover:text-white transition">Layanan</a></li>
+                        <li><a href="pengumuman.html" class="text-gray-400 hover:text-white transition">Pengumuman</a></li>
+                        <li><a href="data-sectoral.html" class="text-gray-400 hover:text-white transition">Data Sektoral</a></li>
+                        <li><a href="dokumen.html" class="text-gray-400 hover:text-white transition">Dokumen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Informasi</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="fasilitas.html" class="text-gray-400 hover:text-white transition">Fasilitas Umum</a></li>
+                        <li><a href="cctv.html" class="text-gray-400 hover:text-white transition">CCTV</a></li>
+                        <li><a href="agenda.html" class="text-gray-400 hover:text-white transition">Agenda</a></li>
+                        <li><a href="pelaporan.html" class="text-gray-400 hover:text-white transition">Pelaporan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Kontak</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-400">Jl. Contoh No. 123, Jakarta</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4 flex-shrink-0"></i>
+                            <span class="text-gray-400">(021) 1234-5678</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4 flex-shrink-0"></i>
+                            <span class="text-gray-400">info@portaldata.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Portal Data. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

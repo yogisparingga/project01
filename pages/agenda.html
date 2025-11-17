@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda - Portal Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="database" class="w-8 h-8 text-blue-600"></i>
+                    <span class="text-xl font-bold text-gray-800">Portal Data</span>
+                </div>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="../index.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="home" class="w-4 h-4"></i>Beranda</a>
+                    <a href="layanan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="briefcase" class="w-4 h-4"></i>Layanan</a>
+                    <a href="pengumuman.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="megaphone" class="w-4 h-4"></i>Pengumuman</a>
+                    <a href="fasilitas.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="building" class="w-4 h-4"></i>Fasilitas Umum</a>
+                    <a href="cctv.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="camera" class="w-4 h-4"></i>CCTV</a>
+                    <a href="agenda.html" class="text-blue-600 font-semibold flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4"></i>Agenda</a>
+                    <a href="data-sectoral.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="bar-chart" class="w-4 h-4"></i>Data Sektoral</a>
+                    <a href="dokumen.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="file-text" class="w-4 h-4"></i>Dokumen</a>
+                    <a href="pelaporan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="flag" class="w-4 h-4"></i>Pelaporan</a>
+                    <a href="kontak.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i>Kontak</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700"><i data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="../index.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="home" class="w-4 h-4"></i>Beranda</a>
+                    <a href="layanan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="briefcase" class="w-4 h-4"></i>Layanan</a>
+                    <a href="pengumuman.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="megaphone" class="w-4 h-4"></i>Pengumuman</a>
+                    <a href="fasilitas.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="building" class="w-4 h-4"></i>Fasilitas Umum</a>
+                    <a href="cctv.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="camera" class="w-4 h-4"></i>CCTV</a>
+                    <a href="agenda.html" class="text-blue-600 font-semibold flex items-center gap-2 py-2"><i data-lucide="calendar" class="w-4 h-4"></i>Agenda</a>
+                    <a href="data-sectoral.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="bar-chart" class="w-4 h-4"></i>Data Sektoral</a>
+                    <a href="dokumen.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="file-text" class="w-4 h-4"></i>Dokumen</a>
+                    <a href="pelaporan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="flag" class="w-4 h-4"></i>Pelaporan</a>
+                    <a href="kontak.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="phone" class="w-4 h-4"></i>Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-white border-b border-gray-200 py-4">
+        <div class="container mx-auto px-4">
+            <div class="breadcrumb">
+                <a href="../index.html" class="text-gray-600 hover:text-blue-600 flex items-center gap-1"><i data-lucide="home" class="w-4 h-4"></i>Beranda</a>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400"></i>
+                <span class="text-gray-800 font-medium">Agenda</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-to-r from-orange-600 to-orange-800 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center gap-3 mb-4">
+                <i data-lucide="calendar" class="w-12 h-12 text-white"></i>
+                <h1 class="text-3xl md:text-4xl font-bold text-white">Agenda Kegiatan</h1>
+            </div>
+            <p class="text-orange-100 text-lg max-w-2xl">Jadwal kegiatan dan acara yang akan datang</p>
+        </div>
+    </section>
+
+    <section class="py-6 bg-white border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="search-box w-full md:w-96">
+                <i data-lucide="search" class="search-icon w-5 h-5"></i>
+                <input type="text" class="form-input search-input" placeholder="Cari agenda..." data-search-target=".agenda-item">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="agenda-item bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden border-l-4 border-blue-600">
+                    <div class="flex flex-col md:flex-row gap-6 p-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-20 h-20 bg-blue-600 rounded-lg flex flex-col items-center justify-center text-white">
+                                <span class="text-xs font-semibold">NOV</span>
+                                <span class="text-2xl font-bold">20</span>
+                                <span class="text-xs">2025</span>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-start justify-between gap-4 mb-3">
+                                <div>
+                                    <span class="badge badge-primary mb-2">Rapat</span>
+                                    <h3 class="font-bold text-xl text-gray-800">Rapat Koordinasi Bulanan</h3>
+                                </div>
+                            </div>
+                            <div class="space-y-2 mb-4 text-sm text-gray-600">
+                                <p class="flex items-center gap-2">
+                                    <i data-lucide="clock" class="w-4 h-4"></i>
+                                    <span>09:00 - 12:00 WIB</span>
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                    <span>Ruang Rapat Utama Lantai 3</span>
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <i data-lucide="user" class="w-4 h-4"></i>
+                                    <span>Kepala Dinas & Staff</span>
+                                </p>
+                            </div>
+                            <p class="text-gray-600 mb-4">Rapat koordinasi rutin bulanan untuk evaluasi program dan perencanaan kegiatan bulan depan.</p>
+                            <a href="agenda-detail.html?id=1" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                                Lihat Detail
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agenda-item bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden border-l-4 border-green-600">
+                    <div class="flex flex-col md:flex-row gap-6 p-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-20 h-20 bg-green-600 rounded-lg flex flex-col items-center justify-center text-white">
+                                <span class="text-xs font-semibold">NOV</span>
+                                <span class="text-2xl font-bold">22</span>
+                                <span class="text-xs">2025</span>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-start justify-between gap-4 mb-3">
+                                <div>
+                                    <span class="badge badge-success mb-2">Sosialisasi</span>
+                                    <h3 class="font-bold text-xl text-gray-800">Sosialisasi Layanan Baru</h3>
+                                </div>
+                            </div>
+                            <div class="space-y-2 mb-4 text-sm text-gray-600">
+                                <p class="flex items-center gap-2">
+                                    <i data-lucide="clock" class="w-4 h-4"></i>
+                                    <span>13:00 - 16:00 WIB</span>
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                    <span>Aula Serbaguna</span>
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <i data-lucide="users" class="w-4 h-4"></i>
+                                    <span>Masyarakat Umum (Gratis)</span>
+                                </p>
+                            </div>
+                            <p class="text-gray-600 mb-4">Sosialisasi layanan e-perizinan dan layanan digital lainnya kepada masyarakat.</p>
+                            <a href="agenda-detail.html?id=2" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                                Lihat Detail
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agenda-item bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden border-l-4 border-purple-600">
+                    <div class="flex flex-col md:flex-row gap-6 p-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-20 h-20 bg-purple-600 rounded-lg flex flex-col items-center justify-center text-white">
+                                <span class="text-xs font-semibold">NOV</span>
+                                <span class="text-2xl font-bold">25</span>
+                                <span class="text-xs">2025</span>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-start justify-between gap-4 mb-3">
+                                <div>
+                                    <span class="badge badge-primary mb-2">Workshop</span>
+                                    <h3 class="font-bold text-xl text-gray-800">Workshop Data Terbuka 2025</h3>
+                                </div>
+                            </div>
+                            <div class="space-y-2 mb-4 text-sm text-gray-600">
+                                <p class="flex items-center gap-2">
+                                    <i data-lucide="clock" class="w-4 h-4"></i>
+                                    <span>08:00 - 17:00 WIB</span>
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                    <span>Hotel Grand Ballroom</span>
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <i data-lucide="users" class="w-4 h-4"></i>
+                                    <span>100 Peserta (Daftar Sekarang)</span>
+                                </p>
+                            </div>
+                            <p class="text-gray-600 mb-4">Workshop tentang pemanfaatan data terbuka untuk transparansi dan pembangunan. Gratis untuk umum dengan pendaftaran terbatas.</p>
+                            <a href="agenda-detail.html?id=3" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                                Lihat Detail
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agenda-item bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden border-l-4 border-red-600">
+                    <div class="flex flex-col md:flex-row gap-6 p-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-20 h-20 bg-red-600 rounded-lg flex flex-col items-center justify-center text-white">
+                                <span class="text-xs font-semibold">DES</span>
+                                <span class="text-2xl font-bold">01</span>
+                                <span class="text-xs">2025</span>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-start justify-between gap-4 mb-3">
+                                <div>
+                                    <span class="badge badge-danger mb-2">Event</span>
+                                    <h3 class="font-bold text-xl text-gray-800">Perayaan Hari Jadi Kota</h3>
+                                </div>
+                            </div>
+                            <div class="space-y-2 mb-4 text-sm text-gray-600">
+                                <p class="flex items-center gap-2">
+                                    <i data-lucide="clock" class="w-4 h-4"></i>
+                                    <span>07:00 - 22:00 WIB</span>
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                    <span>Alun-alun Kota</span>
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <i data-lucide="users" class="w-4 h-4"></i>
+                                    <span>Seluruh Masyarakat</span>
+                                </p>
+                            </div>
+                            <p class="text-gray-600 mb-4">Perayaan hari jadi kota dengan berbagai acara menarik, hiburan, dan pameran UMKM.</p>
+                            <a href="agenda-detail.html?id=4" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                                Lihat Detail
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="database" class="w-6 h-6"></i>
+                        <h3 class="text-lg font-bold">Portal Data</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Platform informasi dan layanan publik yang transparan dan mudah diakses.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="layanan.html" class="text-gray-400 hover:text-white transition">Layanan</a></li>
+                        <li><a href="pengumuman.html" class="text-gray-400 hover:text-white transition">Pengumuman</a></li>
+                        <li><a href="data-sectoral.html" class="text-gray-400 hover:text-white transition">Data Sektoral</a></li>
+                        <li><a href="dokumen.html" class="text-gray-400 hover:text-white transition">Dokumen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Informasi</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="fasilitas.html" class="text-gray-400 hover:text-white transition">Fasilitas Umum</a></li>
+                        <li><a href="cctv.html" class="text-gray-400 hover:text-white transition">CCTV</a></li>
+                        <li><a href="agenda.html" class="text-gray-400 hover:text-white transition">Agenda</a></li>
+                        <li><a href="pelaporan.html" class="text-gray-400 hover:text-white transition">Pelaporan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Kontak</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-400">Jl. Contoh No. 123, Jakarta</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4 flex-shrink-0"></i>
+                            <span class="text-gray-400">(021) 1234-5678</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4 flex-shrink-0"></i>
+                            <span class="text-gray-400">info@portaldata.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Portal Data. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

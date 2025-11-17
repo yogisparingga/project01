@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Sektoral - Portal Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="database" class="w-8 h-8 text-blue-600"></i>
+                    <span class="text-xl font-bold text-gray-800">Portal Data</span>
+                </div>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="../index.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="home" class="w-4 h-4"></i>Beranda</a>
+                    <a href="layanan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="briefcase" class="w-4 h-4"></i>Layanan</a>
+                    <a href="pengumuman.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="megaphone" class="w-4 h-4"></i>Pengumuman</a>
+                    <a href="fasilitas.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="building" class="w-4 h-4"></i>Fasilitas Umum</a>
+                    <a href="cctv.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="camera" class="w-4 h-4"></i>CCTV</a>
+                    <a href="agenda.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4"></i>Agenda</a>
+                    <a href="data-sectoral.html" class="text-blue-600 font-semibold flex items-center gap-2"><i data-lucide="bar-chart" class="w-4 h-4"></i>Data Sektoral</a>
+                    <a href="dokumen.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="file-text" class="w-4 h-4"></i>Dokumen</a>
+                    <a href="pelaporan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="flag" class="w-4 h-4"></i>Pelaporan</a>
+                    <a href="kontak.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i>Kontak</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700"><i data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden pb-4"><div class="flex flex-col space-y-3">
+                    <a href="../index.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="home" class="w-4 h-4"></i>Beranda</a>
+                    <a href="layanan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="briefcase" class="w-4 h-4"></i>Layanan</a>
+                    <a href="pengumuman.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="megaphone" class="w-4 h-4"></i>Pengumuman</a>
+                    <a href="fasilitas.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="building" class="w-4 h-4"></i>Fasilitas Umum</a>
+                    <a href="cctv.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="camera" class="w-4 h-4"></i>CCTV</a>
+                    <a href="agenda.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="calendar" class="w-4 h-4"></i>Agenda</a>
+                    <a href="data-sectoral.html" class="text-blue-600 font-semibold flex items-center gap-2 py-2"><i data-lucide="bar-chart" class="w-4 h-4"></i>Data Sektoral</a>
+                    <a href="dokumen.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="file-text" class="w-4 h-4"></i>Dokumen</a>
+                    <a href="pelaporan.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="flag" class="w-4 h-4"></i>Pelaporan</a>
+                    <a href="kontak.html" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-2 py-2"><i data-lucide="phone" class="w-4 h-4"></i>Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-white border-b border-gray-200 py-4">
+        <div class="container mx-auto px-4">
+            <div class="breadcrumb">
+                <a href="../index.html" class="text-gray-600 hover:text-blue-600 flex items-center gap-1"><i data-lucide="home" class="w-4 h-4"></i>Beranda</a>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400"></i>
+                <span class="text-gray-800 font-medium">Data Sektoral</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-to-r from-cyan-600 to-cyan-800 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center gap-3 mb-4">
+                <i data-lucide="bar-chart" class="w-12 h-12 text-white"></i>
+                <h1 class="text-3xl md:text-4xl font-bold text-white">Data Sektoral</h1>
+            </div>
+            <p class="text-cyan-100 text-lg max-w-2xl">Data terbuka dan transparan dari berbagai sektor</p>
+        </div>
+    </section>
+
+    <section class="py-6 bg-white border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+                <div class="search-box w-full md:w-96">
+                    <i data-lucide="search" class="search-icon w-5 h-5"></i>
+                    <input type="text" class="form-input search-input" placeholder="Cari data..." data-search-target=".data-item">
+                </div>
+                <div class="flex gap-2 flex-wrap">
+                    <button onclick="filterItems('all', '.data-item')" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700">Semua</button>
+                    <button onclick="filterItems('kesehatan', '.data-item')" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-300">Kesehatan</button>
+                    <button onclick="filterItems('pendidikan', '.data-item')" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-300">Pendidikan</button>
+                    <button onclick="filterItems('ekonomi', '.data-item')" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-300">Ekonomi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="data-item bg-white rounded-lg shadow-sm hover:shadow-lg transition p-6" data-category="kesehatan">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                            <i data-lucide="heart-pulse" class="w-6 h-6 text-red-600"></i>
+                        </div>
+                        <span class="badge badge-success">Updated</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Data Kesehatan 2025</h3>
+                    <p class="text-gray-600 text-sm mb-4">Statistik kesehatan masyarakat termasuk data puskesmas, rumah sakit, dan program kesehatan.</p>
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <span class="flex items-center gap-1"><i data-lucide="download" class="w-4 h-4"></i>1.2K</span>
+                        <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i>Nov 2025</span>
+                    </div>
+                    <a href="data-sectoral-detail.html?id=1" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                        Lihat Data
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="data-item bg-white rounded-lg shadow-sm hover:shadow-lg transition p-6" data-category="pendidikan">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <i data-lucide="graduation-cap" class="w-6 h-6 text-blue-600"></i>
+                        </div>
+                        <span class="badge badge-success">Updated</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Data Pendidikan 2025</h3>
+                    <p class="text-gray-600 text-sm mb-4">Statistik pendidikan meliputi jumlah sekolah, siswa, guru, dan fasilitas pendidikan.</p>
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <span class="flex items-center gap-1"><i data-lucide="download" class="w-4 h-4"></i>980</span>
+                        <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i>Nov 2025</span>
+                    </div>
+                    <a href="data-sectoral-detail.html?id=2" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                        Lihat Data
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="data-item bg-white rounded-lg shadow-sm hover:shadow-lg transition p-6" data-category="ekonomi">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <i data-lucide="trending-up" class="w-6 h-6 text-green-600"></i>
+                        </div>
+                        <span class="badge badge-success">Updated</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Data Ekonomi 2025</h3>
+                    <p class="text-gray-600 text-sm mb-4">Data ekonomi daerah termasuk PDRB, inflasi, dan statistik UMKM.</p>
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <span class="flex items-center gap-1"><i data-lucide="download" class="w-4 h-4"></i>1.5K</span>
+                        <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i>Nov 2025</span>
+                    </div>
+                    <a href="data-sectoral-detail.html?id=3" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                        Lihat Data
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="data-item bg-white rounded-lg shadow-sm hover:shadow-lg transition p-6" data-category="kesehatan">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                            <i data-lucide="home" class="w-6 h-6 text-purple-600"></i>
+                        </div>
+                        <span class="badge badge-primary">Archive</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Data Kependudukan 2025</h3>
+                    <p class="text-gray-600 text-sm mb-4">Statistik kependudukan termasuk jumlah penduduk, demografi, dan migrasi.</p>
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <span class="flex items-center gap-1"><i data-lucide="download" class="w-4 h-4"></i>756</span>
+                        <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i>Oct 2025</span>
+                    </div>
+                    <a href="data-sectoral-detail.html?id=4" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                        Lihat Data
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="data-item bg-white rounded-lg shadow-sm hover:shadow-lg transition p-6" data-category="ekonomi">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                            <i data-lucide="building-2" class="w-6 h-6 text-orange-600"></i>
+                        </div>
+                        <span class="badge badge-success">Updated</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Data Infrastruktur 2025</h3>
+                    <p class="text-gray-600 text-sm mb-4">Data infrastruktur publik termasuk jalan, jembatan, dan fasilitas umum.</p>
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <span class="flex items-center gap-1"><i data-lucide="download" class="w-4 h-4"></i>643</span>
+                        <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i>Nov 2025</span>
+                    </div>
+                    <a href="data-sectoral-detail.html?id=5" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                        Lihat Data
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="data-item bg-white rounded-lg shadow-sm hover:shadow-lg transition p-6" data-category="pendidikan">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center">
+                            <i data-lucide="shield-check" class="w-6 h-6 text-pink-600"></i>
+                        </div>
+                        <span class="badge badge-success">Updated</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Data Keamanan 2025</h3>
+                    <p class="text-gray-600 text-sm mb-4">Statistik keamanan dan ketertiban masyarakat di berbagai wilayah.</p>
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <span class="flex items-center gap-1"><i data-lucide="download" class="w-4 h-4"></i>421</span>
+                        <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i>Nov 2025</span>
+                    </div>
+                    <a href="data-sectoral-detail.html?id=6" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                        Lihat Data
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="database" class="w-6 h-6"></i>
+                        <h3 class="text-lg font-bold">Portal Data</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Platform informasi dan layanan publik yang transparan dan mudah diakses.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="layanan.html" class="text-gray-400 hover:text-white transition">Layanan</a></li>
+                        <li><a href="pengumuman.html" class="text-gray-400 hover:text-white transition">Pengumuman</a></li>
+                        <li><a href="data-sectoral.html" class="text-gray-400 hover:text-white transition">Data Sektoral</a></li>
+                        <li><a href="dokumen.html" class="text-gray-400 hover:text-white transition">Dokumen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Informasi</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="fasilitas.html" class="text-gray-400 hover:text-white transition">Fasilitas Umum</a></li>
+                        <li><a href="cctv.html" class="text-gray-400 hover:text-white transition">CCTV</a></li>
+                        <li><a href="agenda.html" class="text-gray-400 hover:text-white transition">Agenda</a></li>
+                        <li><a href="pelaporan.html" class="text-gray-400 hover:text-white transition">Pelaporan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Kontak</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-400">Jl. Contoh No. 123, Jakarta</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4 flex-shrink-0"></i>
+                            <span class="text-gray-400">(021) 1234-5678</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4 flex-shrink-0"></i>
+                            <span class="text-gray-400">info@portaldata.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Portal Data. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
