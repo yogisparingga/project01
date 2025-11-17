@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Matematika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen">
+            <h1>🎮 Game Matematika</h1>
+            <p>Uji kemampuan matematika Anda!</p>
+            <div class="difficulty-selection">
+                <h3>Pilih Tingkat Kesulitan:</h3>
+                <button class="btn btn-easy" onclick="startGame('easy')">Mudah</button>
+                <button class="btn btn-medium" onclick="startGame('medium')">Sedang</button>
+                <button class="btn btn-hard" onclick="startGame('hard')">Sulit</button>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen hidden">
+            <div class="game-header">
+                <div class="info">
+                    <span>Skor: <strong id="score">0</strong></span>
+                    <span>Pertanyaan: <strong><span id="currentQuestion">1</span>/10</strong></span>
+                    <span>Waktu: <strong id="timer">30</strong>s</span>
+                </div>
+                <div class="difficulty-badge" id="difficultyBadge"></div>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question">Berapa 5 + 3?</h2>
+            </div>
+
+            <div class="answers-container" id="answersContainer">
+                <!-- Answers will be dynamically generated -->
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="resultScreen" class="screen hidden">
+            <h1>🎉 Permainan Selesai!</h1>
+            <div class="result-container">
+                <div class="result-item">
+                    <h3>Skor Akhir</h3>
+                    <p class="final-score" id="finalScore">0</p>
+                </div>
+                <div class="result-item">
+                    <h3>Benar</h3>
+                    <p class="correct-answers" id="correctAnswers">0</p>
+                </div>
+                <div class="result-item">
+                    <h3>Salah</h3>
+                    <p class="wrong-answers" id="wrongAnswers">0</p>
+                </div>
+            </div>
+            <div class="result-message" id="resultMessage"></div>
+            <button class="btn btn-restart" onclick="restartGame()">Main Lagi</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
